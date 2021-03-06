@@ -18,6 +18,8 @@ const SpeechRecognition =
 const recognition = new SpeechRecognition();
 
 recognition.onstart = () => {
+  var content = document.querySelector('.content');
+  content.textContent = 'Voice is activated.';
   console.log("voice is activated.");
 };
 
